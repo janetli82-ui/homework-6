@@ -26,7 +26,11 @@ var swiper = new Swiper(".mySwiper", {
       if (old) old.classList.remove("tech");
       e.target.classList.add("tech");
       const top = document.querySelector(`.${e.target.dataset.name}`).offsetTop;
-      document.documentElement.scrollTop = top;
+     
+      window.scrollTo({
+        top,
+        behavior: "smooth"
+      });
     }
   });
 })();
@@ -39,14 +43,14 @@ var swiper = new Swiper(".mySwiper", {
     const project = document.querySelector(".project");
     const contact = document.querySelector(".contact");
     const n = document.documentElement.scrollTop;
-    const tolerance = 1;
-    if (n >= about.offsetTop-tolerance && n < skill.offsetTop) {
+    const tolerance = 120;
+    if (n >= about.offsetTop-tolerance && n < skill.offsetTop-tolerance) {
       document.querySelector("[data-name=about]").classList.add("tech");
-    } else if (n >= skill.offsetTop && n < project.offsetTop) {
+    } else if (n >= skill.offsetTop-tolerance && n < project.offsetTop-tolerance) {
       document.querySelector("[data-name=skill]").classList.add("tech");
-    } else if (n >= project.offsetTop && n < contact.offsetTop) {
+    } else if (n >= project.offsetTop-tolerance && n < contact.offsetTop-tolerance) {
       document.querySelector("[data-name=project]").classList.add("tech");
-    } else if (n >= contact.offsetTop) {
+    } else if (n >= contact.offsetTop-tolerance) {
       document.querySelector("[data-name=contact]").classList.add("tech");
     }
   });

@@ -292,7 +292,7 @@ a {
   width: 340px;
 }
 
-.about h1{
+.about h2{
   text-align: center;
 }
 
@@ -307,7 +307,7 @@ a {
   margin-top: 115px;
 }
 
-.qualification h2{
+.qualification h3{
     text-align: center;
 } 
 
@@ -423,7 +423,7 @@ a {
   width: 325px;
 }
 
-.skill h1 {
+.skill h2 {
   text-align: center;
 }
 
@@ -612,7 +612,7 @@ a {
 }
 
 .repo-detail button {
-  bottom: 146px;
+  bottom: 129px;
   left: 127px;
   position: absolute;
   background-color: rgba(0, 217, 255, 0.1);
@@ -632,7 +632,7 @@ a {
   width: 325px;
 }
 
-.contact h1 {
+.contact h2 {
   text-align: center;
 }
 
@@ -745,7 +745,7 @@ textarea {
   }
 
   .about {
-    padding: 60px 10px;
+    padding: 59px 10px;
   }
 
   .skill {
