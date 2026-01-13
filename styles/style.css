@@ -653,14 +653,20 @@ a {
 
 .form input,
 .new {
+  display: block;
   border: 1px solid rgba(0, 217, 255, 0.5);
   border-radius: 5px;
   color: #00d9ff;
-  margin-bottom: 10px;
+  margin-bottom: 12px;
   outline-style: none;
 }
 
+.new{
+  margin-left: 65px;
+}
+
 textarea {
+  display: block;
   border: 1px solid rgba(0, 217, 255, 0.5);
   border-radius: 5px;
   color: #00d9ff;

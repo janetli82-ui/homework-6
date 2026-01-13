@@ -7,7 +7,6 @@
   name="description"
   content="Portfolio of Ting Li, a front-end developer focusing on responsive design, accessibility, and performance."
 />
- <meta name="robots" content="index, follow" />
     <title>Ting Li | Front-End Developer Portfolio</title>
     <link rel="stylesheet" href="./styles/swiper-bundle.min.css">
     <link rel="stylesheet" href="./styles/style.css" />
@@ -184,11 +183,11 @@
         <h2>Get in touch</h2>
         <form 
           aria-labelledby="contact-title"
-          action="#"
+          action="/contact"
           method="POST"
         >
           <fieldset>
-            <legend id="contact-title">Contact me</legend>
+            <legend>Contact me</legend>
             <div class="form">
               <label for="first-name">First name:</label>
               <input
@@ -197,7 +196,7 @@
                 id="first-name"
                 placeholder="Enter your first name"
                 required
-              /><br />
+              />
               <label for="last-name">Last name:</label>
               <input
                 type="text"
@@ -205,7 +204,7 @@
                 id="last-name"
                 placeholder="Enter your last name"
                 required
-              /><br />
+              />
               <label for="mail">Email:</label>
               <input
                 type="email"
@@ -214,16 +213,14 @@
                 placeholder="Enter your email"
                 required
               />
-              <div class="message">
-                <label for="message">Message:</label><br />
-                <textarea
+              <label for="message">Message:</label>
+              <textarea
                   name="message"
                   id="message"
                   placeholder="Message"
                   required
                   rows="5"
                 ></textarea>
-              </div>
               <button type="submit">Submit</button>
             </div>
           </fieldset>
