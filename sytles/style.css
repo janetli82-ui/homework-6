@@ -53,11 +53,6 @@ a {
   margin-bottom: -7px;
 }
 
-.header .logo img {
-  height: 60px;
-  width: 60px;
-}
-
 .nav {
   display: flex;
   justify-content: flex-end;
@@ -72,7 +67,12 @@ a {
   text-decoration: none;
 }
 
-.header .menu img {
+.header .menu {
+  background-color: transparent;
+  border: 0;
+}
+
+.header .menu img{
   display: none;
 }
 
@@ -280,16 +280,14 @@ a {
 
 .pic img {
   border-radius: 50%;
-  height: 190px;
   object-fit: cover;
   position: relative;
-  width: 190px;
   z-index: 2;
 }
 
 /* section about */
 .about {
-  padding-top: 100px;
+  padding-top: 106px;
   padding-bottom: 138px;
   width: 340px;
 }
@@ -555,6 +553,10 @@ a {
   animation-play-state: paused;
 }
 
+.box:focus-visible {
+  animation-play-state: running;
+}
+
 @keyframes rotateY {
   0% {
     transform: rotateY(0);
@@ -573,32 +575,32 @@ a {
 }
 
 .box a:nth-child(1) {
-  background: url(../images/1.png) no-repeat center center/contain;
+  background: url(../images/1.webp) no-repeat center center/contain;
   transform: rotateY(0) translateZ(300px);
 }
 
 .box a:nth-child(2) {
-  background: url(../images/2.png) no-repeat center center/contain;
+  background: url(../images/2.webp) no-repeat center center/contain;
   transform: rotateY(60deg) translateZ(300px);
 }
 
 .box a:nth-child(3) {
-  background: url(../images/3.png) no-repeat center center/contain;
+  background: url(../images/3.webp) no-repeat center center/contain;
   transform: rotateY(120deg) translateZ(300px);
 }
 
 .box a:nth-child(4) {
-  background: url(../images/4.png) no-repeat center center/contain;
+  background: url(../images/4.webp) no-repeat center center/contain;
   transform: rotateY(180deg) translateZ(300px);
 }
 
 .box a:nth-child(5) {
-  background: url(../images/5.png) no-repeat center center/contain;
+  background: url(../images/5.webp) no-repeat center center/contain;
   transform: rotateY(240deg) translateZ(300px);
 }
 
 .box a:nth-child(6) {
-  background: url(../images/6.png) no-repeat center center/contain;
+  background: url(../images/6.webp) no-repeat center center/contain;
   transform: rotateY(300deg) translateZ(300px);
 }
 
@@ -686,11 +688,14 @@ textarea {
   text-align: center;
 }
 
-.footer img {
+.scroll{
+  background-color: transparent;
+  border: 0;
+}
+
+.scroll img {
   cursor: pointer;
-  height: 40px;
   margin-bottom: 20px;
-  width: 40px;
 }
 
 .hide {
@@ -723,7 +728,6 @@ textarea {
 
   .header .logo img {
     padding-bottom: 8px;
-    z-index: -1;
   }
 
   .header .menu img {
@@ -750,9 +754,6 @@ textarea {
 
   .project {
     padding: 60px 10px;
-  }
-
-  .contact {
   }
 
   .box:active {

@@ -3,35 +3,38 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-    <title>Ting's portfolio</title>
+    <meta
+  name="description"
+  content="Portfolio of Ting Li, a front-end developer focusing on responsive design, accessibility, and performance."
+/>
+    <title>Ting Li | Front-End Developer Portfolio</title>
     <link rel="stylesheet" href="./sytles/swiper-bundle.min.css">
     <link rel="stylesheet" href="./sytles/style.css" />
     <link rel="shortcut icon" href="bitbug_favicon (2).ico" />
-    <script src="./javascript/jquery-3.7.1.min.js" defer></script>
     <script src="./javascript/swiper-bundle.min.js" defer></script>
     <script src="./javascript/javascript.js" defer></script>
-   
   </head>
   <body>
     <header class="header">
       <div class="logo">
-        <img src="./images/lt.jpg" alt="my logo" title="Ting" />
+        <img src="./images/lt.webp" alt="Ting personal logo" width="60"
+  height="60" />
       </div>
-      <nav class="nav">
-        <a href="#" data-name="about">About</a>
-        <a href="#" data-name="skill">Skills</a>
-        <a href="#" data-name="project">Portfolio</a>
-        <a href="#" data-name="contact">Contact</a>
+      <nav class="nav" aria-label="Main navigation">
+        <a href="#about" data-name="about">About</a>
+        <a href="#skill" data-name="skill">Skills</a>
+        <a href="#project" data-name="project">Portfolio</a>
+        <a href="#contact" data-name="contact">Contact</a>
       </nav>
-      <div class="menu">
-        <img src="./images/menu.png" alt="menu">
-      </div>
+      <button class="menu" aria-label="Open menu">
+        <img src="./images/menu.webp" alt="" aria-hidden="true">
+      </button>
     </header>
     <main class="main">
       <div class="main__content">
         <div style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff" class="swiper mySwiper">
           <div class="parallax-bg"  style="
-          background-image: url(./images/bgc-3.jpg);
+          background-image: url(./images/bgc-3.webp);
         "data-swiper-parallax="-23%"></div>
           <div class="swiper-wrapper">
             <div class="swiper-slide">
@@ -67,15 +70,15 @@
               <div class="subtitle" data-swiper-parallax="-200">Open to collaborations and opportunities</div>
               
               <div class="contact-cards">
-                <a href="https://github.com/janetli82-ui" class="github" target="_blank">
+                <a href="https://github.com/janetli82-ui" class="github" target="_blank" rel="noopener noreferrer">
                   <h3>GitHub</h3>
                   <p>github.com/janetli82-ui</p>
                 </a>
-                <a href="https://www.linkedin.com/feed/" class="linkedin" target="_blank">
+                <a href="https://www.linkedin.com/feed/" class="linkedin" target="_blank" rel="noopener noreferrer">
                   <h3>LinkedIn</h3>
                   <p>linkedin.com/in/Ting Li</p>
                 </a>
-                <a href="https://www.facebook.com/profile.php?id=61574273342028" class="facebook" target="_blank">
+                <a href="https://www.facebook.com/profile.php?id=61574273342028" class="facebook" target="_blank" rel="noopener noreferrer" >
                   <h3>Facebook</h3>
                   <p>facebook.com/janetli</p>
                 </a>    
@@ -89,10 +92,10 @@
           <div class="swiper-pagination"></div>
         </div>
       </div>
-      <section class="about">
+      <section id="about" class="about">
         <h1>About me</h1>
         <div class="pic">
-          <img src="./images/me.jpg" alt="my picture" />
+          <img src="./images/me.webp" alt="my picture" width="190" height="190" loading="lazy"/>
         </div>
         <p>
           Hey! My name is Ting and I'm a front-end development student currently learning HTML, CSS, and JavaScript to build interactive and user-friendly websites. I'm passionate about creating clean, responsive web interfaces and am always exploring new frameworks and tools. Eager to apply my growing skills in real-world projects and continuously learn from the developer community.
@@ -133,7 +136,7 @@
           </div>  
         </div>
       </section>
-      <section class="skill">
+      <section id="skill" class="skill">
         <h1>Skills</h1>
         <div class="front">
           <span class="signal">&#123 &#125</span>
@@ -142,49 +145,49 @@
         </div>
         <div class="img">
           <div class="html">
-            <img src="./images/html.png" alt="html" width="18px" />
+            <img src="./images/html.webp" alt="html" width="18" />
             <span>100%</span>
           </div>
           <div class="line"></div>
           <div class="css">
-            <img src="./images/css.png" alt="css" width="18px" />
+            <img src="./images/css.webp" alt="css" width="18" />
             <span>80%</span>
           </div>
           <div class="line-1"></div>
           <div class="js">
-            <img src="./images/js.png" alt="js" width="18px" />
+            <img src="./images/js.webp" alt="js" width="18" />
             <span>60%</span>
           </div>
           <div class="line-2"></div>
           <div class="jquery">
-            <img src="./images/jquery.png" alt="jquery" width="18px" />
+            <img src="./images/jquery.webp" alt="jquery" width="18" />
             <span>80%</span>
           </div>
           <div class="line-3"></div>
         </div>
       </section>
-      <section class="project">
+      <section id="project" class="project">
         <h1>Portfolio</h1>
         <button class="new">Latest public repositories</button>
         <div id="repo-data"></div>
         <div class="box">
-          <a href="https://janetli82-ui.github.io/homework-1/" target="_blank" data-id="0"></a>
-          <a href="https://wineynia.github.io/version-control-assignment/" target="_blank" data-id="1"></a>
-          <a href="https://janetli82-ui.github.io/homework-3/" target="_blank" data-id="2"></a>
-          <a href="https://australia-zoo-pi.vercel.app/" target="_blank" data-id="3"></a>
-          <a href="https://janetli82-ui.github.io/homework-5/" target="_blank" data-id="4"></a>
-          <a href="https://wineynia.github.io/weather-and-country-information/" target="_blank" data-id="5"></a>
+          <a href="https://janetli82-ui.github.io/homework-1/" target="_blank" rel="noopener noreferrer" data-id="0"></a>
+          <a href="https://wineynia.github.io/version-control-assignment/" target="_blank" rel="noopener noreferrer" data-id="1"></a>
+          <a href="https://janetli82-ui.github.io/homework-3/" target="_blank" rel="noopener noreferrer" data-id="2"></a>
+          <a href="https://australia-zoo-pi.vercel.app/" target="_blank" rel="noopener noreferrer" data-id="3"></a>
+          <a href="https://janetli82-ui.github.io/homework-5/" target="_blank" rel="noopener noreferrer" data-id="4"></a>
+          <a href="https://wineynia.github.io/weather-and-country-information/" target="_blank" rel="noopener noreferrer" data-id="5"></a>
         </div>
       </section>
-      <section class="contact">
+      <section id="contact" class="contact">
         <h1>Get in touch</h1>
-        <form
-          action="mailto:Ting.Li@edu.futuregames.se"
+        <form 
+          aria-labelledby="contact-title"
+          action="#"
           method="POST"
-          enctype="text/plain"
         >
           <fieldset>
-            <legend>Contact me</legend>
+            <legend id="contact-title">Contact me</legend>
             <div class="form">
               <label for="first-name">First name:</label>
               <input
@@ -217,6 +220,7 @@
                   id="message"
                   placeholder="Message"
                   required
+                  rows="5"
                 ></textarea>
               </div>
               <button type="submit">Submit</button>
@@ -226,8 +230,10 @@
       </section>
     </main>
     <footer class="footer">
-      <img src="./images/rocket.png" alt="return to first page" class="scroll">
-      <p>&copy Ting Li 2026</p>
+      <button class="scroll" aria-label="Back to top">
+        <img src="./images/rocket.webp" alt="" aria-hidden="true" width="40" height="40" >
+      </button>
+      <p>&copy; Ting Li 2026</p>
     </footer>
   </body>
 </html>

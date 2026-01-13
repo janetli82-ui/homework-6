@@ -155,7 +155,7 @@ box.addEventListener("click", (e) => {
   }
 });
 
-const footer = document.querySelector("footer");
-footer.addEventListener("click", () => {
+const scroll = document.querySelector(".scroll");
+scroll.addEventListener("click", () => {
   document.documentElement.scrollTop = 0;
 });
