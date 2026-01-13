@@ -67,7 +67,7 @@ const topic = document.querySelector(".topic");
 const timelineOne = document.querySelector(".timeline-1");
 const timeline = document.querySelector(".timeline");
 topic.addEventListener("click", (e) => {
-  if (e.target.tagName === "SPAN") {
+  if (e.target.tagName === "BUTTON") {
     document.querySelector(".topic .change").classList.remove("change");
     e.target.classList.add("change");
     if (e.target.classList.contains("work")) {

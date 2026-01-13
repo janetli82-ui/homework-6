@@ -307,42 +307,45 @@ a {
   margin-top: 115px;
 }
 
-.qualification h3{
-    text-align: center;
+.qualification i{
+  font-size: 10px;
+  margin-left: 123px;
+}
+
+.qualification p{
+  font-size: 10px;
+  margin: 10px 0;
+  text-align: start;
 } 
 
-.qualification h5 {
-  color: #5f5959;
+.qualification h3 {
   text-align: center;
 }
-
-.item-1 h5,
-.item-2 h5 {
-  color: #5f5959;
-  font-weight: 400;
-  margin-top: 10px;
-  text-align: start;
-}
-
+ 
 .topic {
-  cursor: pointer;
   margin-top: 35px;
   margin-left: 64px;
   position: relative;
 }
 
 .edu {
-  margin-left:89px;
+  background-color: transparent;
+  border: 0;
+  cursor: pointer;
+  margin-left: 68px;
 }
 
 .work{
-  margin-left: 5px;
+  background-color: transparent;
+  border: 0;
+  cursor: pointer;
+  margin-left: 3px;
 }
 
 .edu::before {
   content: "\e922";
   font-family: "icomoon";
-  left: 104px;
+  left: 100px;
   position: absolute;
   top: 0;
 }
@@ -353,6 +356,10 @@ a {
   left: -18px;
   position: absolute;
   top: 0;
+}
+
+time{
+  font-size: 9px;
 }
 
 .timeline-1 {
@@ -389,7 +396,7 @@ a {
   border-radius: 50%;
   content: " ";
   height: 4px;
-  left: 140px;
+  left: 139px;
   position: absolute;
   top: -4px;
   width: 4px;
