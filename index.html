@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>Ting's portfolio</title>
+    <link rel="stylesheet" href="./sytles/swiper-bundle.min.css">
+    <link rel="stylesheet" href="./sytles/style.css" />
+    <link rel="shortcut icon" href="bitbug_favicon (2).ico" />
+    <script src="./javascript/jquery-3.7.1.min.js" defer></script>
+    <script src="./javascript/swiper-bundle.min.js" defer></script>
+    <script src="./javascript/javascript.js" defer></script>
+   
+  </head>
+  <body>
+    <header class="header">
+      <div class="logo">
+        <img src="./images/lt.jpg" alt="my logo" title="Ting" />
+      </div>
+      <nav class="nav">
+        <a href="#" data-name="about">About</a>
+        <a href="#" data-name="skill">Skills</a>
+        <a href="#" data-name="project">Portfolio</a>
+        <a href="#" data-name="contact">Contact</a>
+      </nav>
+      <div class="menu">
+        <img src="./images/menu.png" alt="menu">
+      </div>
+    </header>
+    <main class="main">
+      <div class="main__content">
+        <div style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff" class="swiper mySwiper">
+          <div class="parallax-bg"  style="
+          background-image: url(./images/bgc-3.jpg);
+        "data-swiper-parallax="-23%"></div>
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="title" data-swiper-parallax="-300">Hi, I'm Ting</div>
+              <div class="subtitle" data-swiper-parallax="-200">Frontend developer</div>
+              <div class="text" data-swiper-parallax="-100"></div>
+            </div>
+            <div class="swiper-slide">
+              <div class="title" data-swiper-parallax="-300">My Resume</div>
+              <div class="subtitle" data-swiper-parallax="-200">Detailed about, skills, and portfolio</div>
+              <div class="cv-preview">
+                <div class="preview-header">
+                  <span class="dot red"></span>
+                  <span class="dot yellow"></span>
+                  <span class="dot green"></span>
+              </div>
+              <div class="preview-content">
+                <h3>Frontend Developer</h3>
+                <p>Learning in web applications</p>
+                <ul>
+                  <li>React & Vue.js</li>
+                  <li>Responsive Design</li>
+                  <li>Performance Optimization</li>
+                </ul>
+              <div class="text" data-swiper-parallax="-100">
+                <a href="./resume.docx" download class="down">Download CV</a>
+              </div>
+      </div>
+    </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="title" data-swiper-parallax="-300">Let's Connect</div>
+              <div class="subtitle" data-swiper-parallax="-200">Open to collaborations and opportunities</div>
+              
+              <div class="contact-cards">
+                <a href="https://github.com/janetli82-ui" class="github" target="_blank">
+                  <h3>GitHub</h3>
+                  <p>github.com/janetli82-ui</p>
+                </a>
+                <a href="https://www.linkedin.com/feed/" class="linkedin" target="_blank">
+                  <h3>LinkedIn</h3>
+                  <p>linkedin.com/in/Ting Li</p>
+                </a>
+                <a href="https://www.facebook.com/profile.php?id=61574273342028" class="facebook" target="_blank">
+                  <h3>Facebook</h3>
+                  <p>facebook.com/janetli</p>
+                </a>    
+              </div>
+              <p class="availability">Available for freelance & full-time opportunities</p>
+             
+            </div>
+          </div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+      <section class="about">
+        <h1>About me</h1>
+        <div class="pic">
+          <img src="./images/me.jpg" alt="my picture" />
+        </div>
+        <p>
+          Hey! My name is Ting and I'm a front-end development student currently learning HTML, CSS, and JavaScript to build interactive and user-friendly websites. I'm passionate about creating clean, responsive web interfaces and am always exploring new frameworks and tools. Eager to apply my growing skills in real-world projects and continuously learn from the developer community.
+          When I'm not on the computer, I enjoy traveling, cooking, and petting dogs.
+        </p>
+        <div class="qualification">
+          <h2>Qualification</h2>
+          <h5>My personal journey</h5>
+          <div class="topic">
+            <span class="work change">Work</span>
+            <span class="edu">Education</span>
+          </div>
+          <div class="exp">
+            <ul class="timeline-1 change">
+              <li class="item-1">
+                <h4>HenJing Technology</h4>
+                <h5>HR specialist</h5> 
+                <h6>2013-2017</h6>
+              </li>
+              <li class="item-2">
+                <h4>Dumpling restaurant</h4>
+                <h5>Servicer</h5> 
+                <h6>2025.4-2025.11</h6>
+              </li>
+            </ul>
+            <ul class="timeline change">
+              <li class="item-1">
+                <h4>Human Resource Management</h4>
+                <h5>East China Normal University</h5> 
+                <h6>2008-2010</h6>
+              </li>
+              <li class="item-2">
+                <h4>Frontend development</h4>
+                <h5>Futuregames</h5> 
+                <h6>2025-</h6>
+              </li>
+            </ul>
+          </div>  
+        </div>
+      </section>
+      <section class="skill">
+        <h1>Skills</h1>
+        <div class="front">
+          <span class="signal">&#123 &#125</span>
+          <span>Frontend developer</span>
+          <h6>*years experiences</h6>
+        </div>
+        <div class="img">
+          <div class="html">
+            <img src="./images/html.png" alt="html" width="18px" />
+            <span>100%</span>
+          </div>
+          <div class="line"></div>
+          <div class="css">
+            <img src="./images/css.png" alt="css" width="18px" />
+            <span>80%</span>
+          </div>
+          <div class="line-1"></div>
+          <div class="js">
+            <img src="./images/js.png" alt="js" width="18px" />
+            <span>60%</span>
+          </div>
+          <div class="line-2"></div>
+          <div class="jquery">
+            <img src="./images/jquery.png" alt="jquery" width="18px" />
+            <span>80%</span>
+          </div>
+          <div class="line-3"></div>
+        </div>
+      </section>
+      <section class="project">
+        <h1>Portfolio</h1>
+        <button class="new">Latest public repositories</button>
+        <div id="repo-data"></div>
+        <div class="box">
+          <a href="https://janetli82-ui.github.io/homework-1/" target="_blank" data-id="0"></a>
+          <a href="https://wineynia.github.io/version-control-assignment/" target="_blank" data-id="1"></a>
+          <a href="https://janetli82-ui.github.io/homework-3/" target="_blank" data-id="2"></a>
+          <a href="https://australia-zoo-pi.vercel.app/" target="_blank" data-id="3"></a>
+          <a href="https://janetli82-ui.github.io/homework-5/" target="_blank" data-id="4"></a>
+          <a href="https://wineynia.github.io/weather-and-country-information/" target="_blank" data-id="5"></a>
+        </div>
+      </section>
+      <section class="contact">
+        <h1>Get in touch</h1>
+        <form
+          action="mailto:Ting.Li@edu.futuregames.se"
+          method="POST"
+          enctype="text/plain"
+        >
+          <fieldset>
+            <legend>Contact me</legend>
+            <div class="form">
+              <label for="first-name">First name:</label>
+              <input
+                type="text"
+                name="first-name"
+                id="first-name"
+                placeholder="Enter your first name"
+                required
+              /><br />
+              <label for="last-name">Last name:</label>
+              <input
+                type="text"
+                name="last-name"
+                id="last-name"
+                placeholder="Enter your last name"
+                required
+              /><br />
+              <label for="mail">Email:</label>
+              <input
+                type="email"
+                name="mail"
+                id="mail"
+                placeholder="Enter your email"
+                required
+              />
+              <div class="message">
+                <label for="message">Message:</label><br />
+                <textarea
+                  name="message"
+                  id="message"
+                  placeholder="Message"
+                  required
+                ></textarea>
+              </div>
+              <button type="submit">Submit</button>
+            </div>
+          </fieldset>
+        </form>
+      </section>
+    </main>
+    <footer class="footer">
+      <img src="./images/rocket.png" alt="return to first page" class="scroll">
+      <p>&copy Ting Li 2026</p>
+    </footer>
+  </body>
+</html>
