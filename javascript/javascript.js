@@ -105,7 +105,7 @@ async function fetchData() {
     const create = data.map((repo) => repo.created_at).join("=====");
     const update = data.map((repo) => repo.updated_at).join("=====");
     const push = data.map((repo) => repo.pushed_at).join("=====");
-    divElement.innerHTML = `<h4>🎉There are ${index} public repositories</h4> 
+    divElement.innerHTML = `<p>🎉There are ${index} public repositories</p> 
      <p>🆔Repo ID: ${id}</p> 
      <p>🎆Repo Name: ${name}</p> 
      <p>🎃Repo Fullname: ${fullName}</p> 

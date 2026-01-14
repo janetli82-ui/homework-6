@@ -30,7 +30,6 @@ body {
 }
 
 img {
- 
   max-width: 100%;
   vertical-align: middle;
 }
@@ -64,11 +63,22 @@ button {
   top: 0;
   width: 100%;
   z-index: 10;
-  flex-shrink: 0; 
+  flex-shrink: 0;
 }
 
 .logo {
-  margin-bottom: -7px;
+  align-items: center;
+  display: flex;
+  height: 60px;
+  justify-content: center;
+  overflow: hidden;
+  width: 60px;
+}
+
+.logo-img {
+  height: 100%;
+  object-fit: cover;
+  width: 100%;
 }
 
 .nav {
@@ -90,7 +100,7 @@ button {
   border: 0;
 }
 
-.header .menu img{
+.header .menu img {
   display: none;
 }
 
@@ -123,7 +133,7 @@ button {
   color: #00d9ff;
   display: inline-block;
   height: 30px;
-  line-height: 30px;
+  line-height: 47px;
   margin-left: 38px;
   margin-top: 25px;
   text-decoration: none;
@@ -136,10 +146,10 @@ button {
   color: #00d9ff;
   font-family: "icomoon";
   font-size: 10px;
-  left: 142px;
+  left: 138px;
   position: absolute;
   text-align: center;
-  top: 24px;
+  top: 25px;
 }
 
 .github::before {
@@ -212,7 +222,7 @@ button {
 }
 
 .preview-content {
-  color: #a5d8ff;;
+  color: #a5d8ff;
   padding: 2rem;
   text-align: left;
 }
@@ -306,6 +316,10 @@ button {
   width: 340px;
 }
 
+.about h2 {
+  text-align: center;
+}
+
 .about p {
   font-size: 1rem;
   max-width: 650px;
@@ -318,15 +332,15 @@ button {
   text-align: center;
 }
 
-.qualification i{
+.qualification i {
   font-size: 10px;
 }
 
-.qualification p{
+.qualification p {
   font-size: 10px;
   margin: 10px 0;
   text-align: start;
-} 
+}
 
 .topic {
   margin-top: 35px;
@@ -341,7 +355,7 @@ button {
   margin-left: 68px;
 }
 
-.work{
+.work {
   background-color: transparent;
   border: 0;
   cursor: pointer;
@@ -364,7 +378,7 @@ button {
   top: 16px;
 }
 
-time{
+time {
   font-size: 9px;
 }
 
@@ -539,13 +553,6 @@ time{
   width: 325px;
 }
 
-.new {
-  cursor: pointer;
-  font-size: 1rem;
-  height: 30px;
-  margin-top: 30px;
-}
-
 #repo-data {
   font-size: 1rem;
   overflow-wrap: break-word;
@@ -666,23 +673,36 @@ time{
 
 .form input,
 .new {
+  background-color: #ffffff;
   display: block;
   border: 1px solid rgba(0, 217, 255, 0.5);
   border-radius: 5px;
-  color: #00d9ff;
+  color: #0f172a;
   margin-bottom: 12px;
   outline-style: none;
 }
 
-.new{
+::placeholder {
+  color: #6b7280;
+  opacity: 1;
+}
+
+.new {
+  background-color: #0f172a;
+  color: #e5f7ff;
+  cursor: pointer;
+  font-size: 1rem;
+  height: 30px;
+  margin-top: 30px;
   margin-left: 65px;
 }
 
 textarea {
+  background-color: #ffffff;
   display: block;
   border: 1px solid rgba(0, 217, 255, 0.5);
   border-radius: 5px;
-  color: #00d9ff;
+  color: #0f172a;
   height: 100px;
   margin-bottom: 10px;
   outline-style: none;
@@ -707,7 +727,7 @@ textarea {
   text-align: center;
 }
 
-.scroll{
+.scroll {
   background-color: transparent;
   border: 0;
 }
@@ -759,8 +779,8 @@ textarea {
   }
 
   .cv-preview {
-    margin: 4rem auto;
-    width: 270px;
+    margin: 2rem auto;
+    width: 262px;
   }
 
   .about {
@@ -779,37 +799,37 @@ textarea {
     animation-play-state: paused;
   }
 
-  .repo-detail{
+  .repo-detail {
     font-size: 1.5rem;
   }
-  
-  .repo-detail button{
+
+  .repo-detail button {
     bottom: 82px;
   }
 }
 
 @media (min-width: 410px) and (max-width: 446px) {
-  .header .menu img{
+  .header .menu img {
     left: 358px;
-   }
+  }
 
-   .cv-preview{
-     margin: 1rem auto;
-   }
+  .cv-preview {
+    margin: 1rem auto;
+  }
 }
 
-@media (max-width: 361px) and (min-width: 320px){
-  .header .menu img{
+@media (max-width: 361px) and (min-width: 320px) {
+  .header .menu img {
     left: 285px;
-   }
+  }
 
-  .swiper-slide .title h2{
+  .swiper-slide .title h2 {
     font-size: 3rem;
   }
 
-  .cv-preview{
-     margin: 5rem -22px;
-   }
+  .cv-preview {
+    margin: 3rem -16px;
+  }
 }
 
 /* external library */
