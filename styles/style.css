@@ -30,6 +30,8 @@ body {
 }
 
 img {
+ 
+  max-width: 100%;
   vertical-align: middle;
 }
 
@@ -37,16 +39,32 @@ a {
   text-decoration: none;
 }
 
+a,
+button {
+  min-height: 48px;
+  min-width: 48px;
+}
+
+.down,
+.new,
+.form button,
+.repo-detail button {
+  height: 48px;
+  line-height: 48px;
+}
+
 .header {
   align-items: flex-end;
   background-color: #040704;
   display: flex;
+  height: 72px;
   justify-content: space-between;
   padding: 10px;
   position: fixed;
   top: 0;
   width: 100%;
   z-index: 10;
+  flex-shrink: 0; 
 }
 
 .logo {
@@ -63,7 +81,7 @@ a {
 .nav a {
   color: aliceblue;
   font-size: 15px;
-  padding: 10px;
+  padding: 14px 16px;
   text-decoration: none;
 }
 
@@ -77,10 +95,6 @@ a {
 }
 
 .tech {
-  background-color: #00ff99;
-}
-
-.onscroll {
   background-color: #00ff99;
 }
 
@@ -198,7 +212,7 @@ a {
 }
 
 .preview-content {
-  color: #a5d8ff;
+  color: #a5d8ff;;
   padding: 2rem;
   text-align: left;
 }
@@ -292,10 +306,6 @@ a {
   width: 340px;
 }
 
-.about h2{
-  text-align: center;
-}
-
 .about p {
   font-size: 1rem;
   max-width: 650px;
@@ -305,11 +315,11 @@ a {
 
 .qualification {
   margin-top: 115px;
+  text-align: center;
 }
 
 .qualification i{
   font-size: 10px;
-  margin-left: 123px;
 }
 
 .qualification p{
@@ -318,10 +328,6 @@ a {
   text-align: start;
 } 
 
-.qualification h3 {
-  text-align: center;
-}
- 
 .topic {
   margin-top: 35px;
   margin-left: 64px;
@@ -339,7 +345,7 @@ a {
   background-color: transparent;
   border: 0;
   cursor: pointer;
-  margin-left: 3px;
+  margin-left: -87px;
 }
 
 .edu::before {
@@ -347,7 +353,7 @@ a {
   font-family: "icomoon";
   left: 100px;
   position: absolute;
-  top: 0;
+  top: 16px;
 }
 
 .work::before {
@@ -355,7 +361,7 @@ a {
   font-family: "icomoon";
   left: -18px;
   position: absolute;
-  top: 0;
+  top: 16px;
 }
 
 time{
@@ -549,7 +555,7 @@ time{
 
 .box {
   animation: rotateY 15s linear infinite;
-  margin: 174px auto;
+  margin: 202px auto;
   height: 300px;
   position: relative;
   transform-style: preserve-3d;
@@ -615,11 +621,11 @@ time{
   border: 3px solid #5f5959;
   font-size: 2rem;
   height: 128px;
-  line-height: 97px;
+  line-height: 55px;
 }
 
 .repo-detail button {
-  bottom: 129px;
+  bottom: 147px;
   left: 127px;
   position: absolute;
   background-color: rgba(0, 217, 255, 0.1);
@@ -644,7 +650,7 @@ time{
 }
 
 .contact form {
-  color: #616ee1;
+  color: #1f2937;
   margin-top: 20px;
 }
 
@@ -786,9 +792,9 @@ textarea {
   .header .menu img{
     left: 358px;
    }
- 
+
    .cv-preview{
-     margin: 5rem auto;
+     margin: 1rem auto;
    }
 }
 
@@ -796,6 +802,10 @@ textarea {
   .header .menu img{
     left: 285px;
    }
+
+  .swiper-slide .title h2{
+    font-size: 3rem;
+  }
 
   .cv-preview{
      margin: 5rem -22px;

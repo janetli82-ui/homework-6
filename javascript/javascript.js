@@ -55,7 +55,6 @@ var swiper = new Swiper(".mySwiper", {
     }
   });
 
-
 const menu = document.querySelector(".menu img");
 menu.addEventListener("click", () => {
   document.querySelectorAll(".nav a").forEach((a) => {
@@ -163,3 +162,5 @@ const scroll = document.querySelector(".scroll");
 scroll.addEventListener("click", () => {
   document.documentElement.scrollTop = 0;
 });
+
+
