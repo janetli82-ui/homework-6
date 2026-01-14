@@ -786,7 +786,12 @@ textarea {
   .about {
     padding: 59px 10px;
   }
-
+  
+  .front::after {
+    right:15px;
+    top: 124px;
+  }
+  
   .skill {
     padding: 60px 10px;
   }
@@ -816,6 +821,7 @@ textarea {
   .cv-preview {
     margin: 1rem auto;
   }
+  
 }
 
 @media (max-width: 361px) and (min-width: 320px) {
