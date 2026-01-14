@@ -5,6 +5,14 @@ var swiper = new Swiper(".mySwiper", {
   pagination: {
     el: ".swiper-pagination",
     clickable: true,
+    renderBullet: (index, className) => {
+      return `
+        <button
+          class="${className}"
+          aria-label="Go to slide ${index + 1}">
+        </button>
+      `;
+    }
   },
   navigation: {
     nextEl: ".swiper-button-next",
